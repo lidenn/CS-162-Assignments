@@ -1,0 +1,62 @@
+What decisions or assumptions did you make about how to design your program?
+
+	Originally, I thought that my program would have most of the 
+	functions in maze level and I would store all of the information
+	as an array in maze level for example, student_row/student_col, 
+	TA1_row/TA1_col, etc. However, I realized that this wasn't very
+	efficient because I would not be utilizing the classes and their 
+	behaviors. If I did this, I would have to be more careful about
+	changing the variables, but the classes make it much more organize.
+	That was the largest assumption I had during the design that I had
+	to change. Other than that, It was mainly just following the guidelines
+	and organizing the specific rules.
+
+What was your test plan for your program?
+	
+	My process of working through my design was to start with Mazelevel and 
+	create the mazelevels, and then add in the people, and then the rules for 
+	the game. I thought this was the best plan because it broke it down into 
+	smaller steps. During the actual process, I didn't realize how difficult 
+	it was to do this, and some of the steps took a very long time. For example,
+	for reading in data and printing it out as an abstract array, I broke it down
+	into reading it in, test-printing it, assigning classes, and then printing 
+	through abstract classes. This process took me a few hours, but I was eventually 
+	able to finish it. My test plan was to break the entire program into mainly small
+	steps, but the overall idea was to create maze levels, put it in the maze, add people,
+	and then the rules for the game.
+
+How did your testing work out? What bugs did you uncover through your testing?
+How did you fix those bugs?
+
+	There were two main bugs that arose in my testing. The first one occured in the
+	infile of the data. I wasn't able to bypass the endline character, but the after
+	looking on piazza, I found out that get simply bypasses it. After that, it was 
+	really easy to readin in the data. My second issue was redeclaration in my constructor.
+	I basically redeclared my mazelocation *** again in my constructor and it gave me a
+	segfault due to a scoping issue.
+
+What problems or obstacles did you run into while you were developing your program?
+How did you resolve these?
+	
+	There weren't any major issues other than the redeclaration of variables and the 
+	endline characters. The only other difficulty during the program was keeping track of
+	the array. Since the people are constantly moving throughout the program, it is really 
+	easy to lose track of where they are. So when I was coding, it was critical that I
+	made sure that those characters always stayed in the array in order to avoid a 
+	seg fault. In addition to being meticulous about the array, the other major difficulty was
+	keeping track of the organization of classes. I think that this was the largest game that
+	we created and it involved classes that interacted with each other in many different ways.
+	It was a lot easier to picture their interaction if I drew it out on a piece of paper.
+
+What resources were useful to you in solving problems you ran into? Were there helpful websites
+or Stack Overflow posts? What did you get from the TAs and/or instructor? Were specific parts of the
+course note helpful?
+
+	I thought that the notes were helpful for the infile part because it told us different ways to 
+	use the infile and read in things. I also got help from the instructor in finding out why my program
+	was segfaulting in the beginning. I spent a lot of time trying to find it, but wasn't able to until 
+	Professor Hess told me that I was redeclaring the variable in my constructor. Finally, I think that 
+	piazza was helpful for all the projects. I always post my questions that I have on there and I get a
+	timely response. Specifically for this project, I asked a lot of questions about scope issues due to
+	the interactions with classes.
+
